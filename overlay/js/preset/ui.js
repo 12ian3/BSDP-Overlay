@@ -74,6 +74,7 @@ window.addEventListener("LiveDataUpdated", (data) =>
     accuracies.forEach(e => { e.innerHTML = `${Math.round((data.Accuracy + Number.EPSILON) * 10) / 10}%`; });
     combos.forEach(e => { e.innerHTML = data.Combo.toString().replace(/(?!^)(?=(?:\d{3})+(?:\.|$))/gm, ','); });
     healthBars.forEach(e => { e.style.height = `${data.PlayerHealth}%`});
+    misses.forEach(e => {e.innerHTML = data.Misses});
 })
 
 function SecondsToMins(seconds)
