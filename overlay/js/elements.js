@@ -3,6 +3,7 @@ var times;
 var scores;
 var accuracies;
 var combos;
+var misses;
 
 var preBSRs;
 var beatmapImages;
@@ -20,6 +21,7 @@ window.addEventListener("load", () =>
     scores = document.querySelectorAll(".score");
     accuracies = document.querySelectorAll(".accuracy");
     combos = document.querySelectorAll(".combo");
+    misses = document.querySelectorAll(".misses");
 
     preBSRs = document.querySelectorAll(".preBSR");
     beatmapImages = document.querySelectorAll(".beatmapImage");
